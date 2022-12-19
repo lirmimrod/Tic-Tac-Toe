@@ -1,0 +1,51 @@
+:root {
+	--cell-size: 100px;
+
+	--color: #81c3fd; /* for hover */
+	--color-set: #0275d8; /* when set */
+	--l: 10px; /* X line-width */
+}
+h1 { font-family: Arial; }  
+
+body {
+	margin: 0;
+    --winningComb:rgb(192, 235, 64);
+}
+
+.board {
+	width: 100vw;
+	height: 40vh;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	justify-items: center;
+	align-items: center;
+	grid-template-columns: repeat(3, auto)
+}
+
+.cell {
+	width: var(--cell-size);
+	height: var(--cell-size);
+	border: 1px solid black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+    color :hotpink;
+    font-size:100px;
+}
+
+.winning-message{
+    text-align: center;
+    font-size:60px;
+}
+
+#player{
+    text-align: center;
+}
+
+#title{
+    text-align: center;
+    color: #81c3fd;
+}
